@@ -1,18 +1,22 @@
+// losowanie zmiennej przez komputer
+
 let randomNumber = Math.floor(Math.random() * 3 + 1);
 
 console.log('Wylosowana liczba to: ' + randomNumber);
 
-let computerMove = 'nieznany ruch';
-
 if(randomNumber == 1){
   computerMove = 'kamień';
-}
-if(randomNumber == 2){
+
+}else if(randomNumber == 2){
   computerMove = 'papier';
-}
-if(randomNumber == 3){
+
+}else(randomNumber == 3){
   computerMove = 'nożyce';
 }
+
+let computerMove = 'nieznany ruch';
+
+// podanie zmiennej przez urzytownika
 
 printMessage('Mój ruch to: ' + computerMove);
 
@@ -24,14 +28,14 @@ let playerMove = 'nieznany ruch';
 
 if(playerInput == '1'){
   playerMove = 'kamień';
+
+}else if(playerInput == '2'){
+  playerMove = 'papier';
+
+}else(playerInput == 3){
+  playerMove = 'nożyce';
 }
 
 printMessage('Twój ruch to: ' + playerMove);
 
-if(1 > 2){
-	printMessage('Niesamowite! Jeden jest większe niż dwa!!!');
-} else if (1 == 2) {
-	printMessage('Dziwne – jeden jest równe dwa?!');
-} else {
-	printMessage('Wszystko po staremu, jeden jest mniejsze niż dwa.');
-}
+printMessage('')
